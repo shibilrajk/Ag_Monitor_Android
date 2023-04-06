@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Powow</string>
+    <string name="welcome_to_agmonitor">Welcome</string>
+    <string name="log_in_to_your_account">Please Log into your account</string>
+    <string name="your_email_mobile">Your Email / Mobile Number</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="forgot_your_password">Forgot your password?</string>
+    <string name="click_here">Click Here</string>
+    <string name="do_you_have">Do not have an account ?</string>
+    <string name="get_help"> Get Help</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="reset">Reset</string>
+    <string name="terms_privacy"><![CDATA[Terms & Conditions | Privacy Policy AgMonitor, 2023]]></string>
+    <string name="sign_in">Sign In</string>
+    <string name="enter_email_or_phone">Please enter your Email or Phone number</string>
+    <string name="valid_email">Please enter a valid Email</string>
+    <string name="your_passwrd">Please enter your Password</string>
+    <string name="passwrd_cases">Must be 8-20 characters, must include at least one lower case and one upper case alpha character and one numeric character</string>
+    <string name="icorrect_email_or_passwrd">Incorrect email and password</string>
+    <string name="passwrd_not_match">Password Not matching</string>
+    <string name="new_passwrd">Enter new password</string>
+    <string name="enter_confirm_passwrd">Enter confirm password</string>
+</resources>

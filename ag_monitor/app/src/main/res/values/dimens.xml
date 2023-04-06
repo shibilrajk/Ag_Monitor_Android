@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="one_thirty_eight">138dp</dimen>
+    <dimen name="eighteen">18sp</dimen>
+    <dimen name="one_one_six">116dp</dimen>
+    <dimen name="eight">8sp</dimen>
+    <dimen name="thirteen">13sp</dimen>
+    <dimen name="seventy_five">75sp</dimen>
+    <dimen name="sixty">60sp</dimen>
+    <dimen name="medium_text_size">12sp</dimen>
+    <dimen name="normal_text_size">14sp</dimen>
+    <dimen name="twenty_two">22sp</dimen>
+    <dimen name="ninteen">19sp</dimen>
+    <dimen name="twenty">20sp</dimen>
+    <dimen name="one">1sp</dimen>
+    <dimen name="three">3sp</dimen>
+    <dimen name="twenty_three">23sp</dimen>
+    <dimen name="twenty_five">25sp</dimen>
+    <dimen name="twenty_six">26sp</dimen>
+    <dimen name="thirty_nine">39sp</dimen>
+    <dimen name="ninty_four">94sp</dimen>
+    <dimen name="twenty_one">21sp</dimen>
+    <dimen name="five">5sp</dimen>
+    <dimen name="ten">10sp</dimen>
+    <dimen name="eighty_three">83sp</dimen>
+    <dimen name="thirty">30sp</dimen>
+    <dimen name="six">6sp</dimen>
+    <dimen name="twelve">12sp</dimen>
+    <dimen name="fifteen">15sp</dimen>
+    <dimen name="fourty_six">46sp</dimen>
+    <dimen name="eleven">11sp</dimen>
+    <dimen name="seventeen">17sp</dimen>
+</resources>
