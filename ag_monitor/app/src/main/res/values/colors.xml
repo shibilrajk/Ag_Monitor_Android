@@ -11,6 +11,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="edit_text_stroke_color">#838383</color>
     <color name="button_color">#F89A3A</color>
+    <color name="button_color_after_click">#83F89A3A</color>
     <color name="edit_text_hint_color">#494949</color>
     <color name="text_error_color">#FF4242</color>
     <color name="warning_stroke">#F9DAB1</color>

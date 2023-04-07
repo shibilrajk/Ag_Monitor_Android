@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Powow</string>
+    <string name="app_name">Ag Monitor</string>
     <string name="welcome_to_agmonitor">Welcome</string>
     <string name="log_in_to_your_account">Please Log into your account</string>
     <string name="your_email_mobile">Your Email / Mobile Number</string>
@@ -23,4 +23,19 @@
     <string name="passwrd_not_match">Password Not matching</string>
     <string name="new_passwrd">Enter new password</string>
     <string name="enter_confirm_passwrd">Enter confirm password</string>
+    <string name="forgot_passwrd">Forgot Password</string>
+    <string name="enter_your_registered_email_id">Enter your registered Email ID</string>
+    <string name="your_email">Your Email</string>
+    <string name="send_link">Send Link</string>
+    <string name="do_not_have_an_account">Do not have an acount?</string>
+    <string name="ag_moitor_2023">Privacy Policy | Copyright AgMonitor 2023</string>
+    <string name="by_continuing"><![CDATA[By continuing, I agree to the AgMonitor Terms & Conditions]]></string>
+    <string name="please_enter_email">Please enter your Email</string>
+    <string name="please_create_your_account">Please create your account</string>
+    <string name="name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="company_name">Company Name</string>
+    <string name="email">Email</string>
+    <string name="register">Register</string>
+    <string name="already_have_an_account">Already have an account ?</string>
 </resources>
