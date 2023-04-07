@@ -30,4 +30,8 @@
     <dimen name="fourty_six">46sp</dimen>
     <dimen name="eleven">11sp</dimen>
     <dimen name="seventeen">17sp</dimen>
+    <dimen name="one_not_six">106sp</dimen>
+    <dimen name="sixteen">16sp</dimen>
+    <dimen name="fifty_two">52sp</dimen>
+    <dimen name="three_not_five">305sp</dimen>
 </resources>

@@ -11,6 +11,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import com.example.powow.R
 import com.example.powow.databinding.ActivityLoginBinding
+import com.example.powow.ui.activities.account.CreateAccountActivity
+import com.example.powow.ui.activities.dashboard.DashboardActivity
 import com.example.powow.utils.Utils
 import java.util.regex.Matcher
 import java.util.regex.Pattern
@@ -51,8 +53,14 @@ class LoginActivity : AppCompatActivity() {
         binding.layoutLoginButton.setOnClickListener {
             if (validateOnClick(it)) {
                 Utils.showSuccessMessage(it, this, "Login successfully")
-                startActivity(Intent(applicationContext, ResetPasswordActivity::class.java))
+                startActivity(Intent(applicationContext, DashboardActivity::class.java))
             }
+        }
+        binding.textForgotPassword.setOnClickListener {
+            startActivity(Intent(applicationContext, ForgotPasswordActivity::class.java))
+        }
+        binding.layoutGetHelp.setOnClickListener {
+            startActivity(Intent(applicationContext, CreateAccountActivity::class.java))
         }
     }
 

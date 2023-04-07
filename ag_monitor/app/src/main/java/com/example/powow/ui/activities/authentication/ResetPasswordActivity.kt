@@ -37,6 +37,11 @@ class ResetPasswordActivity : AppCompatActivity() {
                 finish()
             }
         }
+        binding.layoutGetHelp.setOnClickListener {
+            if (validateOnClick(it)) {
+                startActivity(Intent(applicationContext, LoginActivity::class.java))
+            }
+        }
     }
 
     private fun validateOnClick(view: View): Boolean {
