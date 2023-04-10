@@ -44,7 +44,7 @@
                     android:gravity="center"
                     android:textSize="@dimen/thirteen"
                     android:textColor="@color/black"
-                    android:fontFamily="@font/lato_regular"
+                    android:fontFamily="@font/lato_black"
                     android:layout_marginTop="@dimen/ninteen"/>
                 <RelativeLayout
                     android:id="@+id/layoutEmail"
@@ -77,7 +77,9 @@
                             android:fontFamily="@font/lato_regular"
                             android:textColor="@color/black"
                             android:textColorHint="@color/edit_text_hint_color"
-                            android:textSize="@dimen/normal_text_size" />
+                            android:textSize="@dimen/normal_text_size"
+                            android:inputType="text"
+                            android:maxLines="1"/>
 
                     </com.google.android.material.textfield.TextInputLayout>
                 </RelativeLayout>
@@ -112,6 +114,7 @@
                             android:layout_marginHorizontal="@dimen/twenty_two"
                             android:layout_marginVertical="@dimen/ninteen"
                             android:inputType="textWebPassword"
+                            android:maxLines="1"
                             android:textColorHint="@color/edit_text_hint_color"
                             android:fontFamily="@font/lato_regular"/>
 
@@ -258,5 +261,7 @@
                 android:textSize="@dimen/thirteen" />
         </RelativeLayout>
     </ScrollView>
-
+    <include
+        android:id="@+id/layoutLoading"
+        layout="@layout/custom_loading_dialog" />
 </RelativeLayout>

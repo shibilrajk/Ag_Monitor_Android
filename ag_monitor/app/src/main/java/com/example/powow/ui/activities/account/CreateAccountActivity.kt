@@ -16,12 +16,19 @@ class CreateAccountActivity : AppCompatActivity() {
     private var mLastName = ""
     private var mCompanyName = ""
     private var mEmail = ""
+    private var intentFrom = ""
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityCreateAccountBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        getIntentData()
         initClicks()
     }
+
+    private fun getIntentData() {
+        intentFrom = intent.getStringExtra("INTENT_FROM").toString()
+    }
+
     private fun initClicks() {
         binding.textSignIn.setOnClickListener {
             startActivity(Intent(applicationContext, LoginActivity::class.java))
@@ -75,4 +82,12 @@ class CreateAccountActivity : AppCompatActivity() {
         return valid
     }
 
+    override fun onBackPressed() {
+        if (intentFrom == "LOGIN") {
+            startActivity(Intent(applicationContext, LoginActivity::class.java))
+            finish()
+        }else {
+            super.onBackPressed()
+        }
+    }
 }

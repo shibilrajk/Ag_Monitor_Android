@@ -38,4 +38,6 @@
     <string name="email">Email</string>
     <string name="register">Register</string>
     <string name="already_have_an_account">Already have an account ?</string>
+    <string name="loading">Loading</string>
+    <string name="terms_and_conditions"><![CDATA[Please accept Terms & Conditions]]></string>
 </resources>

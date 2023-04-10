@@ -38,7 +38,8 @@ class ForgotPasswordActivity : AppCompatActivity() {
         }
 
         binding.layoutGetHelp.setOnClickListener {
-            startActivity(Intent(applicationContext, CreateAccountActivity::class.java))
+            startActivity(Intent(applicationContext, CreateAccountActivity::class.java)
+                .putExtra("INTENT_FROM","FORGOT_PASSWORD"))
         }
     }
     private fun validateOnClick(view: View): Boolean {
