@@ -7,7 +7,9 @@ import android.os.Handler
 import android.os.Looper
 import com.example.powow.databinding.ActivityForgotPasswordBinding
 import com.example.powow.databinding.ActivitySplashBinding
+import com.example.powow.helpers.UserSessionManager
 import com.example.powow.ui.activities.authentication.LoginActivity
+import com.example.powow.ui.activities.dashboard.DashboardActivity
 
 class SplashActivity : AppCompatActivity() {
     private lateinit var binding: ActivitySplashBinding
@@ -20,9 +22,14 @@ class SplashActivity : AppCompatActivity() {
 
     private fun initSplash() {
         Handler(Looper.getMainLooper()).postDelayed({
-            val intent = Intent(this, LoginActivity::class.java)
-            startActivity(intent)
-            finish()
+            val userSessionManager = UserSessionManager(this@SplashActivity)
+            if (userSessionManager.getIsUserLoggedIn()) {
+                startActivity(Intent(this, DashboardActivity::class.java))
+                finish()
+            } else {
+                startActivity(Intent(this, LoginActivity::class.java))
+                finish()
+            }
         }, 3000)
     }
 }

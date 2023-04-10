@@ -12,6 +12,7 @@ import androidx.core.content.ContextCompat
 import androidx.lifecycle.ViewModelProvider
 import com.example.powow.R
 import com.example.powow.databinding.ActivityLoginBinding
+import com.example.powow.helpers.UserSessionManager
 import com.example.powow.repo.login.LoginRepository
 import com.example.powow.retrofit.RetrofitService
 import com.example.powow.ui.activities.account.CreateAccountActivity
@@ -91,6 +92,8 @@ class LoginActivity : AppCompatActivity() {
             Log.e("RESPONSE", "DATA : $it")
             setLoading(false)
             if (it != null) {
+                UserSessionManager(this@LoginActivity).setIsUserLoggedIn(true)
+                UserSessionManager(this@LoginActivity).setUserId(it.userId.toString())
                 Utils.showSuccessMessage(view, this, "Login successfully")
                 startActivity(Intent(applicationContext, DashboardActivity::class.java))
             } else {
