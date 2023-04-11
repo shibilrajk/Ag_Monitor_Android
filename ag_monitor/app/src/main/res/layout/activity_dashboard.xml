@@ -6,19 +6,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.activities.dashboard.DashboardActivity">
-    <ImageView
-        android:id="@+id/imgAgMonitor"
-        android:layout_width="wrap_content"
+
+    <FrameLayout
+        android:id="@+id/mainContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottomNavigationView" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/one_not_six"
-        android:src="@drawable/ag_monitor"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Dashboard"
-        android:textSize="@dimen/eighteen"
-        android:layout_centerInParent="true"
-        android:textColor="@color/black"
-        android:fontFamily="@font/lato_bold"/>
+        android:layout_alignParentBottom="true"
+        app:itemTextColor="@color/white"
+        android:background="@color/white"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/bottom_nav_menu"
+        app:itemIconTint="@drawable/bottom_nav_colors"
+        android:elevation="@dimen/medium_text_size"/>
 </RelativeLayout>

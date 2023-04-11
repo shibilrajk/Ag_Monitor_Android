@@ -19,4 +19,7 @@
     <color name="warning_solid_color">#FFF4E5</color>
     <color name="success_solid_color">#ECFFDF</color>
     <color name="dim_color">#838383</color>
+    <color name="blue">#2699FB</color>
+    <color name="bg_color_for_date">#FAFAFA</color>
+    <color name="bg_color_for_fragment">#D6D6D6</color>
 </resources>

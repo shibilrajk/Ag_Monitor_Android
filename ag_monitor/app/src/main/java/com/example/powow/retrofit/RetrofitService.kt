@@ -9,13 +9,17 @@ import retrofit2.Call
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.Body
+import retrofit2.http.GET
 import retrofit2.http.POST
+import retrofit2.http.Query
 import java.util.concurrent.TimeUnit
 
 interface RetrofitService {
 
     @POST(URLs.LOGIN)
     fun getLoginResponse(@Body request: LoginRequest?): Call<LoginResponse?>
+    @GET(URLs.RESET_PASSWORD)
+    fun getForgotPassResponse(@Query("username") mEmail: String): Call<LoginResponse?>
 
     companion object {
         private val stethoClient: OkHttpClient
