@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/map"
+        android:icon="@drawable/baseline_location"
+        android:title="Map"
+        tools:layout="@layout/fragment_map"/>
+    <item
+        android:id="@+id/list"
+        android:icon="@drawable/baseline_format_list"
+        android:title="List"
+        tools:layout="@layout/fragment_task_list"/>
+    <item
+        android:id="@+id/calendar"
+        android:icon="@drawable/baseline_calendar"
+        android:title="Calendar"
+        tools:layout="@layout/fragment_calendar"/>
+    <item
+        android:id="@+id/chat"
+        android:icon="@drawable/baseline_chat"
+        android:title="Chat"
+        tools:layout="@layout/fragment_chat"/>
+</menu>
