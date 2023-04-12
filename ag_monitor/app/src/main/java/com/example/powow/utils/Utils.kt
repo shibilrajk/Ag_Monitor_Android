@@ -13,8 +13,13 @@ import android.view.Window
 import android.widget.FrameLayout
 import android.widget.TextView
 import android.widget.Toast
+import androidx.annotation.ColorRes
+import androidx.core.content.ContextCompat
 import com.example.powow.R
 import com.google.android.material.snackbar.Snackbar
+import java.time.DayOfWeek
+import java.time.format.TextStyle
+import java.util.*
 
 
 class Utils {
@@ -70,6 +75,14 @@ class Utils {
             }
         }
 
+        fun DayOfWeek.displayText(uppercase: Boolean = false): String {
+            return getDisplayName(TextStyle.SHORT, Locale.ENGLISH).let { value ->
+                if (uppercase) value.uppercase(Locale.ENGLISH) else value
+            }
+        }
+
+        internal fun Context.getColorCompat(@ColorRes color: Int) =
+            ContextCompat.getColor(this, color)
 
     }
 
