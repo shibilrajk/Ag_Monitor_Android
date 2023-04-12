@@ -1,14 +1,177 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.fragments.dashboard.CalendarFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
+        android:id="@+id/layoutCalendar"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Calendar Fragment" />
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:elevation="@dimen/five">
+        <TextView
+            android:id="@+id/textCalendar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calendar"
+            android:textSize="@dimen/twenty"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:fontFamily="@font/lato_bold"
+            android:padding="@dimen/fifteen"/>
+        <ImageView
+            android:id="@+id/imgOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_more"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginHorizontal="@dimen/ten"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/layoutDayWeeSwitcher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/layoutCalendar"
+        android:layout_marginHorizontal="@dimen/twenty"
+        android:layout_marginTop="@dimen/eight"
+        android:background="@drawable/bg_day_or_week">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Day"
+            android:textSize="@dimen/sixteen"
+            android:fontFamily="@font/lato_black"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:padding="@dimen/ten"
+            android:layout_margin="@dimen/five"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Week"
+            android:textSize="@dimen/sixteen"
+            android:fontFamily="@font/lato_black"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:padding="@dimen/ten"
+            android:layout_margin="@dimen/five"
+            android:background="@drawable/bg_day"/>
+    </LinearLayout>
 
-</FrameLayout>
+    <LinearLayout
+        android:id="@+id/layoutDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/layoutDayWeeSwitcher"
+        android:gravity="center_vertical"
+        android:background="@color/bg_color_for_date"
+        android:padding="@dimen/fifteen">
+        <ImageView
+            android:id="@+id/arrowBack"
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
+            android:src="@drawable/back_arrow"
+            app:tint="@color/blue" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="SUN"
+                    android:fontFamily="@font/lato_black"
+                    android:textColor="@color/dim_color"
+                    android:textSize="@dimen/ten"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="MON"
+                    android:fontFamily="@font/lato_black"
+                    android:textColor="@color/dim_color"
+                    android:textSize="@dimen/ten"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="TUE"
+                    android:fontFamily="@font/lato_black"
+                    android:textColor="@color/dim_color"
+                    android:textSize="@dimen/ten"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="WED"
+                    android:fontFamily="@font/lato_black"
+                    android:textColor="@color/dim_color"
+                    android:textSize="@dimen/ten"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="THU"
+                    android:fontFamily="@font/lato_black"
+                    android:textColor="@color/dim_color"
+                    android:textSize="@dimen/ten"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="FRI"
+                    android:fontFamily="@font/lato_black"
+                    android:textColor="@color/dim_color"
+                    android:textSize="@dimen/ten"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="SAT"
+                    android:fontFamily="@font/lato_black"
+                    android:textColor="@color/dim_color"
+                    android:textSize="@dimen/ten"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/calendarRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/arrowForward"
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
+            android:src="@drawable/forward_arrow"
+            app:tint="@color/blue" />
+    </LinearLayout>
+</RelativeLayout>

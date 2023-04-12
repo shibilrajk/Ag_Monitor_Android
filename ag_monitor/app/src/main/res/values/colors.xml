@@ -22,4 +22,5 @@
     <color name="blue">#2699FB</color>
     <color name="bg_color_for_date">#FAFAFA</color>
     <color name="bg_color_for_fragment">#D6D6D6</color>
+    <color name="bg_color_for_day_or_week">#EEEEF0</color>
 </resources>
