@@ -19,4 +19,8 @@
         <item name="android:textColor">@color/text_error_color</item>
         <item name="android:fontFamily">@font/lato_regular</item>
     </style>
+    <style name="CircularDeterminateProgressBar">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/circle</item>
+    </style>
 </resources>
