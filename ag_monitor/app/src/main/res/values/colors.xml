@@ -23,4 +23,6 @@
     <color name="bg_color_for_date">#FAFAFA</color>
     <color name="bg_color_for_fragment">#D6D6D6</color>
     <color name="bg_color_for_day_or_week">#EEEEF0</color>
+    <color name="bg_for_irrigation">#D5D7D9</color>
+    <color name="bg_for_irrigation_line">#DFDFDF</color>
 </resources>
